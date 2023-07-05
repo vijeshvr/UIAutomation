@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    // Cucumber dependencies
+    implementation 'io.cucumber:cucumber-java:6.10.4'
+    implementation 'io.cucumber:cucumber-junit:6.10.4'
+    implementation 'io.cucumber:cucumber-core:6.10.4'
+    implementation 'io.cucumber:cucumber-gherkin:6.10.4'
+
+    // Selenium dependencies
+    implementation 'org.seleniumhq.selenium:selenium-java:4.1.0'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.0.3'
+    
+    // Additional Selenium dependencies
+    implementation 'org.seleniumhq.selenium:selenium-api:4.1.0'
+    implementation 'org.seleniumhq.selenium:selenium-chrome-driver:4.1.0'
+    implementation 'org.seleniumhq.selenium:selenium-firefox-driver:4.1.0'
+
+    // Other dependencies
+    testImplementation 'junit:junit:4.13.2'
+}
+
+test {
+    useJUnitPlatform()
+}
