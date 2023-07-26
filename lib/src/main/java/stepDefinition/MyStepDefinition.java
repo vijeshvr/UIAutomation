@@ -36,7 +36,6 @@ public class MyStepDefinition {
 	   
 	    System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"\\src\\main\\resources\\driver\\geckodriver.exe");
 
-		 
 //	  Set the path to the ad blocker extension XPI file
         String adBlockerExtensionPath = "C:\\Users\\Vijesh V R\\eclipse-workspace\\DemoBDDCucumber\\lib\\src\\main\\resources\\driver\\uBlock0_1.50.1b6.firefox.signed.xpi";
 
@@ -46,7 +45,7 @@ public class MyStepDefinition {
         profile.setPreference("extensions.autoDisableScopes", 0);
         profile.setPreference("extensions.startupFingerprint", "");
         
-        // Create FirefoxOptions and add the ad blocker extension
+//        // Create FirefoxOptions and add the ad blocker extension
         FirefoxOptions options = new FirefoxOptions();
         options.setProfile(profile);
 	    

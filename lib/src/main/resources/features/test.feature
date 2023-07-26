@@ -14,8 +14,8 @@ Feature: CustomerRegistration
      
     Examples: 
       | Name  | Gender | Address  | City | State  | PIN  | MobileNumber | Email  | Password  |
-      | Gino |     Male | Paradise |  Chennai |   TamilNadu | 629163 	| 123456789 |     dbhph@hjs.com | Test9355 | 
-      #| Vije |     Male | Paradise |  Chennai |   TamilNadu | 629163 	| 123498889 |     dssh@hjs.com | Test5362 | 
+      | Gino |     Male | aaaaa |  Nagercoil |   TamilNadu | 629163 	| 123456789 |     dbhph@hjs.com | Test9355 | 
+      #| Vije |     Male | bbbbbb |  Nagercoil |   TamilNadu | 629163 	| 123498889 |     dssh@hjs.com | Test5362 | 
   @positive
   Scenario: Edit the Customer Phone number
     Given User is in Managers page
@@ -52,16 +52,4 @@ Feature: CustomerRegistration
     Then User gets a alert message saying Customer could not be deleted!!. First delete all accounts of this customer then delete the customer
     
     
-    
-
-
-  #@tag2
-  #Scenario Outline: Title of your scenario outline
-    #Given I want to write a step with <name>
-    #When I check for the <value> in step
-    #Then I verify the <status> in step
-#
-    #Examples: 
-      #| name  | value | status  |
-      #| name1 |     5 | success |
-      #| name2 |     7 | Fail    |
+  
